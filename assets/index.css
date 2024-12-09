@@ -113,6 +113,7 @@
   align-items: center;
   gap: 2.5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 #searchBar {
