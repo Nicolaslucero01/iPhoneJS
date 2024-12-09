@@ -54,12 +54,22 @@
           </div>
 
           <div class="filter-search">
-            <input
-              type="text"
-              id="searchBar"
-              placeholder="Buscar productos..."
-              aria-label="Buscar productos"
-            />
+            <div class="input-container">
+              <input
+                type="text"
+                id="searchBar"
+                placeholder="Buscar productos..."
+                aria-label="Buscar productos"
+              />
+              <button
+                id="clearSearch"
+                class="clear-btn"
+                aria-label="Borrar búsqueda"
+                hidden
+              >
+                &times;
+              </button>
+            </div>
           </div>
         </div>
 
