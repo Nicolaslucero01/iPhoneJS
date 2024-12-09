@@ -225,6 +225,31 @@
   border: none;
 }
 
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#searchBar {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.clear-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+
+.clear-btn:hover {
+  color: #333;
+}
+
 .btn {
   width: 100%;
   padding: 0.5rem;
