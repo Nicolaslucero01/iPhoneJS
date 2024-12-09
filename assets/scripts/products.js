@@ -88,7 +88,7 @@ const productsData = [
     id: 12,
     nombre: "Samsung S23 FE 8GB 256GB",
     precio: 590,
-    imagen: "./assets/img/s23Fe.png",
+    imagen: "./assets/img/s23FE.png",
     category: "Samsung",
   },
   {
