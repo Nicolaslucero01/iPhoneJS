@@ -183,10 +183,6 @@
   transform: scale(1.05);
 }
 
-.card__img {
-  cursor: pointer;
-}
-
 .card__img img {
   width: 100%;
   height: 175px;
@@ -255,6 +251,7 @@
   -moz-transition: all 300ms;
   -ms-transition: all 300ms;
   -o-transition: all 300ms;
+  font-size: 16px;
 }
 
 .btn__loaded {
