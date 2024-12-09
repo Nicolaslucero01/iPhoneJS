@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="stylesheet" href="./assets/animations.css" />
+    <link rel="stylesheet" href="./assets/responsive.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/img_logo.png"
+      type="image/x-icon"
+    />
+    <title>iPhone JS</title>
+  </head>
+
+  <body>
+    <header id="header__container">
+      <div class="container__logo">
+        <img src="./assets/img/dibujo.png" class="img__logo" />
+      </div>
+      <nav class="navcart__container">
+        <div class="navbar__container">
+          <div class="menu-label">
+            <img src="./assets/img/lista.png" alt="" class="menu-icon" />
+          </div>
+          <ul class="navbar__list">
+            <li><a href="#container__home">INICIO</a></li>
+            <li><a href="#container__products">PRODUCTOS</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main id="page__body">
+      <!--------- HOME --------->
+      <!-- <section id="container__home">
+        <img src="./assets/img/img_hom.png" />
+      </section> -->
+
+      <!--------- PRODUCTS --------->
+      <section id="container__products">
+        <h2 style="font-size: 50px">Productos</h2>
+        <div class="filter-container">
+          <div class="filter-dropdown">
+            <p>Filtrar por:</p>
+            <select id="categoryFilter" name="categories">
+              <option value="Todos">Todos</option>
+              <option value="Samsung">Samsung</option>
+              <option value="Xiaomi">Xiaomi</option>
+              <option value="Motorola">Motorola</option>
+              <option value="Consolas">Consolas</option>
+            </select>
+          </div>
+
+          <div class="filter-search">
+            <input
+              type="text"
+              id="searchBar"
+              placeholder="Buscar productos..."
+              aria-label="Buscar productos"
+            />
+          </div>
+        </div>
+
+        <div class="products__cards"></div>
+        <button class="btn__loaded">Ver más</button>
+      </section>
+
+      <section id="container__contact">
+        <div class="contact__title">
+          <h2>¿Tenés alguna consulta para hacernos?</h2>
+          <span
+            >No dudes en escribirnos, nuestro equipo se contactará contigo lo
+            antes posible.</span
+          >
+        </div>
+
+        <form class="form__contact" id="contactForm">
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Nombre completo"
+            required
+          />
+          <input
+            type="text"
+            id="telefono"
+            placeholder="Número telefónico"
+            required
+          />
+          <input
+            type="email"
+            id="correo"
+            placeholder="Dirección de correo"
+            required
+          />
+          <textarea
+            id="mensaje"
+            placeholder="Escribe tu mensaje..."
+            required
+          ></textarea>
+          <button type="submit" class="btn__contact btn">ENVIAR</button>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <section class="footer-container">
+        <div class="footer-icons">
+          <a href="https://instagram.com" target="_blank">
+            <i class="fa-brands fa-instagram instagram"></i>
+          </a>
+          <a href="https://whatsapp.com" target="_blank">
+            <i class="fa-brands fa-whatsapp whatsapp"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook facebook"></i>
+          </a>
+        </div>
+        <p>&copy;Desarrollado por CTL Designs 2023</p>
+      </section>
+    </footer>
+    <div class="add-modal">asd</div>
+
+    <script
+      src="https://kit.fontawesome.com/2a27fcfc26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/scripts/products.js"></script>
+    <script src="./assets/scripts/validator.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>
