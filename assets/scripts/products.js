@@ -181,14 +181,14 @@ const productsData = [
     id: 24,
     nombre: "Xiaomi Redmi Note 13 5G 6GB 128GB",
     precio: 285,
-    imagen: "./assets/img/xiaomiNote135g.png",
+    imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
   },
   {
     id: 25,
     nombre: "Xiaomi Redmi Note 13 5G 8GB 256GB",
     precio: 320,
-    imagen: "./assets/img/xiaomiNote135g.png",
+    imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
   },
 
