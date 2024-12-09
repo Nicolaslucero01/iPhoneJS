@@ -2,6 +2,7 @@ const productsContainer = document.querySelector(".products__cards");
 const showMoreBtn = document.querySelector(".btn__loaded");
 const categoryFilter = document.getElementById("categoryFilter");
 const searchBar = document.getElementById("searchBar");
+const clearSearchBtn = document.getElementById("clearSearch");
 
 let loadedProducts = 12;
 const productsPerPage = 12;
@@ -81,6 +82,20 @@ const applySearch = () => {
   applyFilter();
 };
 
+const toggleClearButton = () => {
+  if (searchBar.value.trim() !== "") {
+    clearSearchBtn.hidden = false;
+  } else {
+    clearSearchBtn.hidden = true;
+  }
+};
+
+const clearSearch = () => {
+  searchBar.value = "";
+  clearSearchBtn.hidden = true;
+  applySearch();
+};
+
 const appState = {
   products: productsData,
   filteredProducts: productsData,
@@ -92,7 +107,11 @@ const init = () => {
 
   showMoreBtn.addEventListener("click", showMoreProducts);
   categoryFilter.addEventListener("change", applyFilter);
-  searchBar.addEventListener("input", applySearch);
+  searchBar.addEventListener("input", () => {
+    applySearch();
+    toggleClearButton();
+  });
+  clearSearchBtn.addEventListener("click", clearSearch);
 };
 
 init();
