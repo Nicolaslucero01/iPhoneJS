@@ -27,15 +27,32 @@ const createProductTemplate = (product) => {
     </div>
 
     <div class="card__buy">
-      <button class="btn" data-id='${id}' data-name="${nombre}" data-image="${imagen}" data-price="${precio}">
+      <button class="btn" onclick="sendToWhatsApp('${id}', '${nombre}', '${precio}')">
         ¡Lo quiero!
       </button>
     </div>
   </div>`;
 };
 
+const sendToWhatsApp = (id, nombre, precio) => {
+  const numeroWhatsApp = "542984779890";
+  const mensaje = `Hola, estoy interesado en el producto: ${nombre}, que cuesta $${precio} USD.`;
+
+  const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(
+    mensaje
+  )}`;
+
+  window.open(url, "_blank");
+};
+
 const renderProducts = (productList) => {
   productsContainer.innerHTML = "";
+
+  if (productList.length === 0) {
+    productsContainer.innerHTML = `<p class="no-results">No se han encontrado productos...</p>`;
+    return;
+  }
+
   productList.forEach((product) => {
     productsContainer.innerHTML += createProductTemplate(product);
   });

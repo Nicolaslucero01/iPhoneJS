@@ -351,6 +351,46 @@ const productsData = [
     imagen: "./assets/img/switchlite.png",
     category: "Consolas",
   },
+
+  {
+    id: 46,
+    nombre: "iPhone 15 128GB ",
+    precio: 900,
+    imagen: "./assets/img/iphone15.png",
+    category: "Iphone",
+  },
+
+  {
+    id: 47,
+    nombre: "iPhone 11 64GB ",
+    precio: 520,
+    imagen: "./assets/img/iphone11.png",
+    category: "Iphone",
+  },
+
+  {
+    id: 48,
+    nombre: "iPhone 11 128GB ",
+    precio: 550,
+    imagen: "./assets/img/iphone11.png",
+    category: "Iphone",
+  },
+
+  {
+    id: 49,
+    nombre: "iPhone 12 128GB ",
+    precio: 670,
+    imagen: "./assets/img/iphone12.png",
+    category: "Iphone",
+  },
+
+  {
+    id: 50,
+    nombre: "iPhone 13 128GB ",
+    precio: 740,
+    imagen: "./assets/img/iphone13.png",
+    category: "Iphone",
+  },
 ];
 
 const sortedProducts = productsData.sort((a, b) => b.precio - a.precio);
