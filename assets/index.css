@@ -228,6 +228,11 @@ body {
   -ms-transition: all 200ms;
   -o-transition: all 200ms;
   font-size: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .btn__loaded {
@@ -247,6 +252,11 @@ body {
 .down:hover {
   background-color: #f7e119;
   font-weight: bold;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 
 .no-results {
@@ -265,12 +275,14 @@ body {
   color: white;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 .footer-container {
   display: flex;
-  width: 90%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 80%;
 }
 
 .footer-container .footer-icons {
