@@ -185,6 +185,26 @@ body {
   padding: 0.5rem;
 }
 
+.card__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.availability {
+  font-size: 14px;
+}
+
+.availability--green {
+  color: green;
+  font-weight: bold;
+}
+
+.availability--orange {
+  color: orange;
+  font-weight: bold;
+}
+
 .card:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
   transform: scale(1.05);

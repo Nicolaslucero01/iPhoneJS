@@ -15,7 +15,11 @@ const formatPrice = (price) => {
 };
 
 const createProductTemplate = (product) => {
-  const { id, nombre, imagen, precio } = product;
+  const { id, nombre, imagen, precio, stock } = product;
+  const disponibilidad = stock > 0 ? "Entrega inmediata" : "A pedido";
+  const disponibilidadClase =
+    stock > 0 ? "availability--green" : "availability--orange";
+
   return `<div class="card">
     <div class="card__img">
       <img src="${imagen}" alt="${nombre}">
@@ -23,7 +27,10 @@ const createProductTemplate = (product) => {
 
     <div class="card__content">
       <h3>${nombre}</h3>
-      <span>$${formatPrice(precio)} USD</span>
+      <div class="card__price">
+        <span>$${formatPrice(precio)} USD</span>
+        <p class="availability ${disponibilidadClase}">${disponibilidad}</p>
+      </div>     
     </div>
 
     <div class="card__buy">

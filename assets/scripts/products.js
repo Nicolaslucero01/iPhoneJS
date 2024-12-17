@@ -5,6 +5,7 @@ const productsData = [
     precio: 250,
     imagen: "./assets/img/a15.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ const productsData = [
     precio: 260,
     imagen: "./assets/img/a15.png",
     category: "Samsung",
+    stock: 0,
   },
 
   {
@@ -20,6 +22,7 @@ const productsData = [
     precio: 280,
     imagen: "./assets/img/a25.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 5,
@@ -27,6 +30,7 @@ const productsData = [
     precio: 300,
     imagen: "./assets/img/a25.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 6,
@@ -34,6 +38,7 @@ const productsData = [
     precio: 375,
     imagen: "./assets/img/a35.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 7,
@@ -41,6 +46,7 @@ const productsData = [
     precio: 392,
     imagen: "./assets/img/a35.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 8,
@@ -48,6 +54,7 @@ const productsData = [
     precio: 450,
     imagen: "./assets/img/a55.png",
     category: "Samsung",
+    stock: 1,
   },
   {
     id: 9,
@@ -55,6 +62,7 @@ const productsData = [
     precio: 475,
     imagen: "./assets/img/a55.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 10,
@@ -62,6 +70,7 @@ const productsData = [
     precio: 1060,
     imagen: "./assets/img/s23Ultra.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 11,
@@ -69,6 +78,7 @@ const productsData = [
     precio: 1100,
     imagen: "./assets/img/s23Ultra.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 12,
@@ -76,6 +86,7 @@ const productsData = [
     precio: 590,
     imagen: "./assets/img/s23FE.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 13,
@@ -83,6 +94,7 @@ const productsData = [
     precio: 800,
     imagen: "./assets/img/s24Fe.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 14,
@@ -90,6 +102,7 @@ const productsData = [
     precio: 850,
     imagen: "./assets/img/s24.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 15,
@@ -97,6 +110,7 @@ const productsData = [
     precio: 900,
     imagen: "./assets/img/s24.png",
     category: "Samsung",
+    stock: 0,
   },
   {
     id: 16,
@@ -104,6 +118,7 @@ const productsData = [
     precio: 200,
     imagen: "./assets/img/xiaomi13c.png",
     category: "Xiaomi",
+    stock: 0,
   },
   {
     id: 17,
@@ -111,6 +126,7 @@ const productsData = [
     precio: 215,
     imagen: "./assets/img/xiaomi14c.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -119,6 +135,7 @@ const productsData = [
     precio: 240,
     imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -127,6 +144,7 @@ const productsData = [
     precio: 250,
     imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -135,6 +153,7 @@ const productsData = [
     precio: 270,
     imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -144,6 +163,7 @@ const productsData = [
     imagen: "./assets/img/xiaomi13pro4g.png",
 
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -153,6 +173,7 @@ const productsData = [
     imagen: "./assets/img/xiaomi13pro4g.png",
 
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -161,6 +182,7 @@ const productsData = [
     precio: 350,
     imagen: "./assets/img/xiaomi13pro4g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -169,6 +191,7 @@ const productsData = [
     precio: 285,
     imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
+    stock: 0,
   },
   {
     id: 25,
@@ -176,6 +199,7 @@ const productsData = [
     precio: 320,
     imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -184,6 +208,7 @@ const productsData = [
     precio: 380,
     imagen: "./assets/img/xiaomi13pro5g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -192,6 +217,7 @@ const productsData = [
     precio: 440,
     imagen: "./assets/img/xiaomi13pro5g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -200,6 +226,7 @@ const productsData = [
     precio: 440,
     imagen: "./assets/img/xiaomi13pro+5g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -208,6 +235,7 @@ const productsData = [
     precio: 490,
     imagen: "./assets/img/xiaomi13pro+5g.png",
     category: "Xiaomi",
+    stock: 0,
   },
 
   {
@@ -216,6 +244,7 @@ const productsData = [
     precio: 210,
     imagen: "./assets/img/motog24.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -224,6 +253,7 @@ const productsData = [
     precio: 230,
     imagen: "./assets/img/motog24power.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -232,6 +262,7 @@ const productsData = [
     precio: 280,
     imagen: "./assets/img/motog54.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -240,6 +271,7 @@ const productsData = [
     precio: 280,
     imagen: "./assets/img/motog73.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -248,6 +280,7 @@ const productsData = [
     precio: 350,
     imagen: "./assets/img/motog84.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -256,6 +289,7 @@ const productsData = [
     precio: 370,
     imagen: "./assets/img/motog84.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -264,6 +298,7 @@ const productsData = [
     precio: 390,
     imagen: "./assets/img/motog85.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -272,6 +307,7 @@ const productsData = [
     precio: 500,
     imagen: "./assets/img/motoedge50.png",
     category: "Motorola",
+    stock: 0,
   },
 
   {
@@ -280,6 +316,7 @@ const productsData = [
     precio: 750,
     imagen: "./assets/img/xboxseriesx.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -288,6 +325,7 @@ const productsData = [
     precio: 490,
     imagen: "./assets/img/xboxseriess.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -296,6 +334,7 @@ const productsData = [
     precio: 710,
     imagen: "./assets/img/xboxseriesxwhite.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -304,6 +343,7 @@ const productsData = [
     precio: 570,
     imagen: "./assets/img/xboxseriessblack.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -312,6 +352,7 @@ const productsData = [
     precio: 750,
     imagen: "./assets/img/ps5.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -320,6 +361,7 @@ const productsData = [
     precio: 670,
     imagen: "./assets/img/ps5digital.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -328,6 +370,7 @@ const productsData = [
     precio: 455,
     imagen: "./assets/img/switch.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -336,6 +379,7 @@ const productsData = [
     precio: 310,
     imagen: "./assets/img/switchlite.png",
     category: "Consolas",
+    stock: 0,
   },
 
   {
@@ -344,6 +388,7 @@ const productsData = [
     precio: 900,
     imagen: "./assets/img/iphone15.png",
     category: "Iphone",
+    stock: 0,
   },
 
   {
@@ -352,6 +397,7 @@ const productsData = [
     precio: 520,
     imagen: "./assets/img/iphone11.png",
     category: "Iphone",
+    stock: 0,
   },
 
   {
@@ -360,6 +406,7 @@ const productsData = [
     precio: 550,
     imagen: "./assets/img/iphone11.png",
     category: "Iphone",
+    stock: 0,
   },
 
   {
@@ -368,6 +415,7 @@ const productsData = [
     precio: 670,
     imagen: "./assets/img/iphone12.png",
     category: "Iphone",
+    stock: 0,
   },
 
   {
@@ -376,6 +424,7 @@ const productsData = [
     precio: 740,
     imagen: "./assets/img/iphone13.png",
     category: "Iphone",
+    stock: 0,
   },
 ];
 
