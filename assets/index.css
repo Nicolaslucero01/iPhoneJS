@@ -332,20 +332,12 @@ body {
   color: #1877f2;
 }
 
-.fa-whatsapp {
-  color: #3ac055;
-}
-
 .fa-instagram {
   color: rgb(231, 81, 81);
 }
 
 .fa-instagram:hover {
   color: rgba(231, 81, 81, 0.6);
-}
-
-.fa-whatsapp:hover {
-  color: rgba(59, 199, 87, 0.6);
 }
 
 .fa-facebook:hover {
