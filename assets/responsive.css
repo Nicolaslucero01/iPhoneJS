@@ -33,13 +33,14 @@
   .contact__title {
     width: 60%;
   }
+
+  #container__home {
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
-  #page__body {
-    gap: 6rem;
-  }
-
   #container__products {
     width: 96%;
   }
