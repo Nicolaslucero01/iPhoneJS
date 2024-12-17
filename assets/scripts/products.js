@@ -1,33 +1,19 @@
 const productsData = [
   {
     id: 1,
-    nombre: "Samsung A15 4GB 128GB",
-    precio: 210,
+    nombre: "Samsung A16 4GB 128GB",
+    precio: 250,
     imagen: "./assets/img/a15.png",
     category: "Samsung",
   },
   {
     id: 2,
-    nombre: "Samsung A15 6GB 128GB",
-    precio: 220,
-    imagen: "./assets/img/a15.png",
-    category: "Samsung",
-  },
-  {
-    id: 3,
-    nombre: "Samsung A15 8GB 256GB",
+    nombre: "Samsung A16 8GB 128GB",
     precio: 260,
     imagen: "./assets/img/a15.png",
     category: "Samsung",
   },
 
-  {
-    id: 39,
-    nombre: "Samsung A15 5G 8GB 256GB",
-    precio: 280,
-    imagen: "./assets/img/a15.png",
-    category: "Samsung",
-  },
   {
     id: 4,
     nombre: "Samsung A25 5G 8GB 256GB",
@@ -299,7 +285,7 @@ const productsData = [
   {
     id: 39,
     nombre: "Xbox Series S 512GB",
-    precio: 550,
+    precio: 490,
     imagen: "./assets/img/xboxseriess.png",
     category: "Consolas",
   },
@@ -307,7 +293,7 @@ const productsData = [
   {
     id: 40,
     nombre: "Xbox Series X 1TB Digital Blanca ",
-    precio: 750,
+    precio: 710,
     imagen: "./assets/img/xboxseriesxwhite.png",
     category: "Consolas",
   },
@@ -315,7 +301,7 @@ const productsData = [
   {
     id: 41,
     nombre: "Xbox Series S 1TB",
-    precio: 650,
+    precio: 570,
     imagen: "./assets/img/xboxseriessblack.png",
     category: "Consolas",
   },
@@ -323,7 +309,7 @@ const productsData = [
   {
     id: 42,
     nombre: "Play Station 5 Slim 1TB",
-    precio: 840,
+    precio: 750,
     imagen: "./assets/img/ps5.png",
     category: "Consolas",
   },
@@ -331,7 +317,7 @@ const productsData = [
   {
     id: 43,
     nombre: "Play Station 5 Slim 1TB Digital",
-    precio: 790,
+    precio: 670,
     imagen: "./assets/img/ps5digital.png",
     category: "Consolas",
   },
@@ -339,7 +325,7 @@ const productsData = [
   {
     id: 44,
     nombre: "Nintendo Switch OLED 64GB",
-    precio: 470,
+    precio: 455,
     imagen: "./assets/img/switch.png",
     category: "Consolas",
   },
@@ -347,7 +333,7 @@ const productsData = [
   {
     id: 45,
     nombre: "Nintendo Switch Lite",
-    precio: 290,
+    precio: 310,
     imagen: "./assets/img/switchlite.png",
     category: "Consolas",
   },
