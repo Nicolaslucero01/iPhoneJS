@@ -168,10 +168,10 @@ body {
 }
 
 .products__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 4rem;
-  justify-content: center;
+  max-width: 100%;
 }
 
 .card {
