@@ -51,7 +51,7 @@ const productsData = [
   {
     id: 8,
     nombre: "Samsung A55 5G 8GB 128GB",
-    precio: 450,
+    precio: 425,
     imagen: "./assets/img/a55.png",
     category: "Samsung",
     stock: 0,
@@ -59,7 +59,7 @@ const productsData = [
   {
     id: 9,
     nombre: "Samsung A55 5GB 8GB 256GB",
-    precio: 475,
+    precio: 460,
     imagen: "./assets/img/a55.png",
     category: "Samsung",
     stock: 0,
