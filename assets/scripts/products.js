@@ -54,7 +54,7 @@ const productsData = [
     precio: 450,
     imagen: "./assets/img/a55.png",
     category: "Samsung",
-    stock: 1,
+    stock: 0,
   },
   {
     id: 9,
