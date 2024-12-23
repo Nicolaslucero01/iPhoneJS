@@ -3,9 +3,11 @@ const showMoreBtn = document.querySelector(".btn__loaded");
 const categoryFilter = document.getElementById("categoryFilter");
 const searchBar = document.getElementById("searchBar");
 const clearSearchBtn = document.getElementById("clearSearch");
+const showPricesInPesos = document.querySelector(".switch input"); // Selecciona el checkbox para alternar precios
 
 let loadedProducts = 12;
 const productsPerPage = 12;
+let dolarBlueVenta = null;
 
 const formatPrice = (price) => {
   const hasCents = price % 1 !== 0;
@@ -14,11 +16,25 @@ const formatPrice = (price) => {
     .replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 };
 
+const obtenerValorDolarBlue = async () => {
+  try {
+    const response = await fetch("https://dolarapi.com/v1/dolares/blue");
+    const data = await response.json();
+    dolarBlueVenta = data.venta;
+    console.log(`Valor actual del Dólar Blue: ${dolarBlueVenta}`);
+  } catch (error) {
+    console.error("Error al obtener el valor del Dólar Blue:", error);
+  }
+};
+
 const createProductTemplate = (product) => {
   const { id, nombre, imagen, precio, stock } = product;
   const disponibilidad = stock > 0 ? "Entrega inmediata" : "A pedido";
   const disponibilidadClase =
     stock > 0 ? "availability--green" : "availability--orange";
+
+  const precioPesos = dolarBlueVenta ? precio * dolarBlueVenta : "N/A";
+  const mostrarPesos = showPricesInPesos.checked;
 
   return `<div class="card">
     <div class="card__img">
@@ -28,9 +44,19 @@ const createProductTemplate = (product) => {
     <div class="card__content">
       <h3>${nombre}</h3>
       <div class="card__price">
-        <span>$${formatPrice(precio)} USD</span>
+        <div class="container__prices">
+          ${
+            mostrarPesos
+              ? `<span><img src="./assets/img/banderaargentina.webp" alt="Argentina" class="flag-icon"> $${formatPrice(
+                  precioPesos
+                )}</span>`
+              : `<span><img src="./assets/img/us.webp" alt="EEUU" class="flag-icon"> $${formatPrice(
+                  precio
+                )}</span>`
+          }
+        </div>
         <p class="availability ${disponibilidadClase}">${disponibilidad}</p>
-      </div>     
+      </div>
     </div>
 
     <div class="card__buy">
@@ -120,14 +146,24 @@ const clearSearch = () => {
   applySearch();
 };
 
+const actualizarValorDolarBlue = () => {
+  setInterval(async () => {
+    await obtenerValorDolarBlue();
+    renderProducts(appState.filteredProducts.slice(0, loadedProducts));
+  }, 600000);
+};
+
 const appState = {
   products: productsData,
   filteredProducts: productsData,
 };
 
-const init = () => {
+const init = async () => {
+  await obtenerValorDolarBlue();
   const initialProducts = appState.filteredProducts.slice(0, loadedProducts);
   renderProducts(initialProducts);
+
+  actualizarValorDolarBlue();
 
   showMoreBtn.addEventListener("click", showMoreProducts);
   categoryFilter.addEventListener("change", applyFilter);
@@ -136,6 +172,9 @@ const init = () => {
     toggleClearButton();
   });
   clearSearchBtn.addEventListener("click", clearSearch);
+  showPricesInPesos.addEventListener("change", () => {
+    renderProducts(appState.filteredProducts.slice(0, loadedProducts));
+  });
 };
 
 init();

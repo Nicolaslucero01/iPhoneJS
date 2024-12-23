@@ -10,6 +10,13 @@
   scroll-padding-top: 100px;
 }
 
+.flag-icon {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
 html,
 body {
   height: 100%;
