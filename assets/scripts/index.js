@@ -3,7 +3,7 @@ const showMoreBtn = document.querySelector(".btn__loaded");
 const categoryFilter = document.getElementById("categoryFilter");
 const searchBar = document.getElementById("searchBar");
 const clearSearchBtn = document.getElementById("clearSearch");
-const showPricesInPesos = document.querySelector(".switch input"); // Selecciona el checkbox para alternar precios
+const showPricesInPesos = document.querySelector(".switch input");
 
 let loadedProducts = 12;
 const productsPerPage = 12;
@@ -21,7 +21,6 @@ const obtenerValorDolarBlue = async () => {
     const response = await fetch("https://dolarapi.com/v1/dolares/blue");
     const data = await response.json();
     dolarBlueVenta = data.venta;
-    console.log(`Valor actual del Dólar Blue: ${dolarBlueVenta}`);
   } catch (error) {
     console.error("Error al obtener el valor del Dólar Blue:", error);
   }
@@ -150,7 +149,7 @@ const actualizarValorDolarBlue = () => {
   setInterval(async () => {
     await obtenerValorDolarBlue();
     renderProducts(appState.filteredProducts.slice(0, loadedProducts));
-  }, 600000);
+  }, 60000);
 };
 
 const appState = {
