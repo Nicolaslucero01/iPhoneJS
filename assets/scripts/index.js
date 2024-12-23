@@ -21,6 +21,7 @@ const obtenerValorDolarBlue = async () => {
     const response = await fetch("https://dolarapi.com/v1/dolares/blue");
     const data = await response.json();
     dolarBlueVenta = data.venta;
+    console.log("Valor del Dólar Blue:", dolarBlueVenta);
   } catch (error) {
     console.error("Error al obtener el valor del Dólar Blue:", error);
   }
@@ -149,7 +150,7 @@ const actualizarValorDolarBlue = () => {
   setInterval(async () => {
     await obtenerValorDolarBlue();
     renderProducts(appState.filteredProducts.slice(0, loadedProducts));
-  }, 60000);
+  }, 120000);
 };
 
 const appState = {
