@@ -19,23 +19,16 @@ const productsData = [
   {
     id: 4,
     nombre: "Samsung A25 5G 8GB 256GB",
-    precio: 280,
+    precio: 310,
     imagen: "./assets/img/a25.png",
     category: "Samsung",
     stock: 0,
   },
-  {
-    id: 5,
-    nombre: "Samsung A25 5G 8GB 128GB",
-    precio: 300,
-    imagen: "./assets/img/a25.png",
-    category: "Samsung",
-    stock: 0,
-  },
+
   {
     id: 6,
     nombre: "Samsung A35 5G 8GB 128GB",
-    precio: 375,
+    precio: 355,
     imagen: "./assets/img/a35.png",
     category: "Samsung",
     stock: 0,
@@ -43,7 +36,7 @@ const productsData = [
   {
     id: 7,
     nombre: "Samsung A35 5G 8GB 256GB",
-    precio: 392,
+    precio: 370,
     imagen: "./assets/img/a35.png",
     category: "Samsung",
     stock: 0,
@@ -125,15 +118,6 @@ const productsData = [
     nombre: "Xiaomi 14C 4GB 128GB",
     precio: 215,
     imagen: "./assets/img/xiaomi14c.png",
-    category: "Xiaomi",
-    stock: 0,
-  },
-
-  {
-    id: 18,
-    nombre: "Xiaomi Redmi Note 13 4G 6GB 128GB",
-    precio: 240,
-    imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
     stock: 0,
   },

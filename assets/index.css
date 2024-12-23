@@ -220,6 +220,8 @@ body {
   justify-content: center;
   gap: 4rem;
   max-width: 100%;
+  min-height: 300px;
+  align-items: center;
 }
 
 .card {
