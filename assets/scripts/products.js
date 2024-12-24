@@ -125,7 +125,7 @@ const productsData = [
   {
     id: 19,
     nombre: "Xiaomi Redmi Note 13 4G 8GB 128GB",
-    precio: 250,
+    precio: 225,
     imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
     stock: 0,
@@ -134,7 +134,7 @@ const productsData = [
   {
     id: 20,
     nombre: "Xiaomi Redmi Note 13 4G 8GB 256GB",
-    precio: 270,
+    precio: 250,
     imagen: "./assets/img/xiaominote134g.png",
     category: "Xiaomi",
     stock: 0,
@@ -172,7 +172,7 @@ const productsData = [
   {
     id: 24,
     nombre: "Xiaomi Redmi Note 13 5G 6GB 128GB",
-    precio: 285,
+    precio: 275,
     imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
     stock: 0,
@@ -180,7 +180,7 @@ const productsData = [
   {
     id: 25,
     nombre: "Xiaomi Redmi Note 13 5G 8GB 256GB",
-    precio: 320,
+    precio: 305,
     imagen: "./assets/img/xiaominote135g.png",
     category: "Xiaomi",
     stock: 0,
@@ -189,7 +189,7 @@ const productsData = [
   {
     id: 26,
     nombre: "Xiaomi Redmi Note 13 PRO 5G 8GB 256GB",
-    precio: 380,
+    precio: 365,
     imagen: "./assets/img/xiaomi13pro5g.png",
     category: "Xiaomi",
     stock: 0,
@@ -198,7 +198,7 @@ const productsData = [
   {
     id: 27,
     nombre: "Xiaomi Redmi Note 13 PRO 5G 8GB 512GB",
-    precio: 440,
+    precio: 405,
     imagen: "./assets/img/xiaomi13pro5g.png",
     category: "Xiaomi",
     stock: 0,
@@ -207,7 +207,7 @@ const productsData = [
   {
     id: 28,
     nombre: "Xiaomi Redmi Note 13 PRO + 5G 8GB 256GB",
-    precio: 440,
+    precio: 410,
     imagen: "./assets/img/xiaomi13pro+5g.png",
     category: "Xiaomi",
     stock: 0,
@@ -216,7 +216,7 @@ const productsData = [
   {
     id: 29,
     nombre: "Xiaomi Redmi Note 13 PRO + 5G 8GB 512GB",
-    precio: 490,
+    precio: 455,
     imagen: "./assets/img/xiaomi13pro+5g.png",
     category: "Xiaomi",
     stock: 0,
